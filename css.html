@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>CSS</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">CLIENT-SIDE PROGRAMMING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><button type="button" class="btn btn-dark">HOME</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html.html"><button type="button" class="btn btn-dark">HTML</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="css.html"><button type="button" class="btn btn-dark active">CSS</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript.html"><button type="button" class="btn btn-dark">JAVASCRIPT</button></a>
+              </li>     
+          </ul>
+        </div>  
+      </nav>
+    <!-- Page Title -->
+    <div class="jumbotron text-center">
+        <h1>CSS</h1>
+        <button type="button" class="btn btn-outline-dark" onclick="cssWriter()">WHAT DOES CSS STAND FOR?</button>
+        <h3 id="css" class="text-center"></h3>
+    </div>
+    <!-- Content -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="images/css.png" class="rounded-circle" alt="CSS">
+                <p><strong>CSS</strong> is a style sheet language used to describe the presentation of a document written in a markup language (such as HTML or XML). It stands for <em>Cascading Style Sheets</em> and is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+                <p>HTML was created with the purpose of describing how the content of a web page should be rendered.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/pen.png" class="rounded-circle" alt="CSS Styling">
+                <p>But when tags like <strong>&ltfont&gt</strong>, and the <strong>color</strong> attribute were added to HTML 3.2, development of large websites, where fonts and colour information were added to every single page, became a long, messy and expensive process. To solve this problem, the <strong>World Wide Web Consortium</strong> (W3C) created CSS, thus removing the style formatting from the HTML.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/picture.jpeg" class="rounded-circle" alt="Document">
+                <p>CSS allows the separation of presentation from structure. It can define colours, fonts, text alignment, size, borders, spacing, layout and many other typographic characteristics, and can do so independently for on-screen and printed views. CSS also defines non-visual styles, such as reading speed and emphasis for aural text readers. The W3C has now deprecated the use of all presentational HTML markup.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Examples of CSS-->
+    <div class="container text-center">
+        <br>
+        <h3>How Does CSS Work?</h3>
+        <br>
+            <p>As mentioned before, CSS is responsible for adding all the style to the page. Below, you can find an example of the styling being applied to an HTML file.</p>   
+            <img src="images/css-example.png" class="example-img" alt="HTML VS Code">
+            <img src="images/css-example-browser.png" class="example-img" alt="HTML Browser">
+            <p>In order to change the design, it is necessary to select the HTML element we want to alter and apply the style to it.</p>
+        <ul>
+            <li>To select the element, we simply repeat it in the CSS file (without the tags, like <strong>body, h1</strong> and <strong>p</strong>) and enclose our modifications in <strong>{ curly brackets }</strong>.</li>
+            <li>It is possible to select a specific <strong>class</strong> or <strong>id</strong>. For classes, we add a dot <strong>. + class name</strong>; for ids, we type <strong># + id name</strong>. This way, only the elements which contain that class or id would be modified by CSS.</li>
+            <li>For example, if one of my headings has a class "red" <strong>( &lth1 class="red">Heading&lth1&gt )</strong>, I could select it on CSS with <strong>.red</strong> and specify the style for only that heading.</li>
+            <li>From the example, we can see how CSS changed the layout and style of the page dramatically (from the one seen on the HTML section) by adding margins on both sides, altering the font and background colours and centering the heading.</li>
+            <li>Although this example shows an external CSS, it is also possible to add CSS to the HTML file with the <strong>&ltstyle&gt</strong> tag to the head or inside an element (inline). Inline CSS overrides any style added to the head or external file when applied to the same element.</li>
+        </ul>
+        <br>
+    </div>
+    <!-- Footer -->
+    <div class="footer bg-dark">
+        <p class="footer-content">Diego Lucas dos Santos • 2020308</p>
+    </div>
+</body>
+</html>

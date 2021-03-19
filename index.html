@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>CLIENT-SIDE PROGRAMMING</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">CLIENT-SIDE PROGRAMMING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><button type="button" class="btn btn-dark active">HOME</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html.html"><button type="button" class="btn btn-dark">HTML</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="css.html"><button type="button" class="btn btn-dark">CSS</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript.html"><button type="button" class="btn btn-dark">JAVASCRIPT</button></a>
+              </li>     
+          </ul>
+        </div>  
+      </nav>
+    <!-- Page Title -->
+    <div class="jumbotron text-center">
+        <h1>CLIENT-SIDE PROGRAMMING</h1>
+        <button type="button" class="btn btn-outline-dark" onclick="homeWriter()">CLICK ME AND SEE WHAT HAPPENS</button>
+        <h3 id="home"></h3>
+    </div>
+    <!-- Content -->
+    <div class="container">
+        <h3 class="text-center">What is <em>Client-side Programming</em>?</h3>
+        <br>
+        <p>Client-side programming is the name given for a program that runs on a client.</p>
+        <p>This kind of programming deals with user interfaces with which the user interacts in the web. As a general rule, it is a browser in the user's machine that runs the code written in any scripting language like <em>JavaScript</em>.</p>
+        <p>The uses of client-side programming include:</p>
+        <ul>
+            <li>the making of interactive web pages;</li>
+            <li>making every element function dynamically;</li>
+            <li>interacting with temporary storage;</li>
+            <li>working as an interface between user and server;</li>
+            <li>sending requests to the server;</li>
+            <li>retrieving data from server;</li>
+            <li>interacting with local storage;</li>
+            <li>providing remote access for client-server program.</li>
+        </ul>
+        <p>There are many client-side scripting languages and they are used for structuring, modeling, designing animating and much more.</p>
+        <p>In this website, we will look into the <strong>3 languages all web developers must learn</strong>:</p>
+        <br>
+    </div>
+    <!-- Image Links -->
+    <div class="container">
+        <br>
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <a href="html.html"><img src="images/html.png" class="rounded-circle home-pic" alt="HTML"></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="javascript.html"><img src="images/javascript.png" class="rounded-circle home-pic" alt="JAVASCRIPT"></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="css.html"><img src="images/css.png" class="rounded-circle home-pic" alt="CSS"></a>
+            </div>
+        </div>
+        <br>
+    </div>
+    <!-- Footer -->
+    <div class="footer bg-dark">
+        <p class="footer-content">Diego Lucas dos Santos • 2020308</p>
+    </div>
+</body>
+</html>

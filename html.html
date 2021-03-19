@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>HTML</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">CLIENT-SIDE PROGRAMMING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><button type="button" class="btn btn-dark">HOME</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html.html"><button type="button" class="btn btn-dark active">HTML</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="css.html"><button type="button" class="btn btn-dark">CSS</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript.html"><button type="button" class="btn btn-dark">JAVASCRIPT</button></a>
+              </li>     
+          </ul>
+        </div>  
+      </nav>
+    <!-- Page Title -->
+    <div class="jumbotron text-center">
+        <h1>HTML</h1>
+        <button type="button" class="btn btn-outline-dark" onclick="htmlWriter()">WHAT DOES HTML STAND FOR?</button>
+        <h3 id="html" class="text-center"></h3>
+    </div>
+    <!-- Content -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="images/html.png" class="rounded-circle" alt="HTML">
+                <p><strong>HTML</strong> is the standard markup language for web pages. It stands for <em>Hyper-Text Markup Language</em> and it is used to structure a web page.</p>
+                <p>"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the web. HTML is the most important of the 3 languages every web developer must learn, because it is impossible to create a website only with CSS or JavaScript.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/tags.png" class="rounded-circle" alt="HTML Code">
+                <p>The technology consists of a series of elements (enclosed by <strong>&lttags&gt</strong>) that tell the browser how to display the content.</p>
+                <p>For example, <strong>&lth1&gt</strong> to <strong>&lth6&gt</strong> would make headings; a <strong>&ltp&gt</strong> makes a paragraph; a <strong>&ltbr&gt</strong> adds a line break between content; The <strong>&ltimg&gt</strong> element adds images when using the attribute <strong>src</strong> and a <strong>&ltdiv&gt</strong> creates sections in the document. These were some of the elements used in this site.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/document.png" class="rounded-circle" alt="Document">
+                <p>With HTML, the order of the content is displayed according to the order it has been written in.</p>
+                <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Examples of HTML -->
+    <div class="container text-center">
+        <br>
+        <h3>How Does HTML Work?</h3>
+        <br>
+            <p>Below, you can find an example of how a HTML code is written and how it is rendered by the browser (without CSS).</p>  
+            <img src="images/html-example.png" class="example-img" alt="HTML VS Code">
+            <img src="images/html-example-browser.png" class="example-img" alt="HTML Browser">
+            <p>The example shows a number of tags being used and how the page is rendered on the right.</p>
+        <ul>
+            <li>The <strong>!DOCTYPE html</strong> declaration tells the browser to render the document as HTML5.</li>
+            <li>All the content of the page should be inside the <strong>&lthtml&gt</strong>.</li>
+            <li>The <strong>&lthead&gt</strong> is where information about the page, like encoding, language, description etc, can be added using the <strong>&ltmeta&gt</strong> as well as linking and external CSS file with <strong>&ltlink&gt</strong> and the <strong>&lttitle&gt</strong> of the document (which only appears on the browser tab). Apart from the title, nothing else is displayed in the rendered page.</li>
+            <li>Within the <strong>&ltbody&gt</strong>, tags like <strong>&lth1&gt</strong> (heading 1) and <strong>&ltp&gt</strong> (paragraph) are used to create the content.</li>
+            <li>Some tags, such as <strong>&ltbr&gt</strong> (line break) or <strong>&lthr&gt</strong> (horizontal rule – it adds a line separator) do not have a closing tag <strong>(&lt/&gt)</strong>.</li>
+            <li>The <strong>&lta&gt</strong> with the attribute <strong>href</strong> creates a hyperlink that directs the user to another page or website.</li>
+        </ul>
+        <br>
+    </div>
+    <!-- Footer -->
+    <div class="footer bg-dark">
+        <p class="footer-content">Diego Lucas dos Santos • 2020308</p>
+    </div>
+</body>
+</html>

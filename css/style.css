@@ -1,0 +1,57 @@
+body {
+    font-family: Lora, serif;
+    background-color: #f6f6f6;
+}
+
+p {
+    text-align: justify;
+    font-size: 110%;
+}
+
+ul {
+    text-align: justify;
+    font-size: 110%;
+}
+
+.jumbotron {
+    background-color: #edeef7;
+    height: 250px;
+}
+
+.rounded-circle {
+    height: auto;
+    width: 50%;
+}
+
+.home-pic {
+    height: auto;
+    width: 65%;
+}
+
+.example-img {
+    width: 49%;
+}
+
+.js-anima {
+    height: auto;
+    width: 15%;
+}
+
+.js-example {
+    margin: auto;
+    padding: 2%;
+    outline-color: black;
+    outline-style: groove;
+    line-height: 30%;
+}
+
+.footer {
+    height: 60px;
+}
+
+.footer-content {
+    text-align: center;
+    font-size: medium;
+    color: white;
+    padding-top: 16px;
+}
