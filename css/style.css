@@ -32,17 +32,14 @@ ul {
     width: 49%;
 }
 
-.js-anima {
-    height: auto;
-    width: 15%;
-}
-
 .js-example {
-    margin: auto;
+    margin-right: 5%;
+    margin-left: 5%;
     padding: 2%;
+    align-items: center;
     outline-color: black;
     outline-style: groove;
-    line-height: 30%;
+    line-height: normal;
 }
 
 .footer {
